@@ -1,18 +1,194 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:id="@+id/cbIn"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:textSize="20dp"
+        android:hint="Checking Date"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        />
+
+    <TextView
+        android:id="@+id/cbOut"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:textSize="20dp"
+        android:hint="Checkout Date"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        />
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:textSize="20dp"
+        android:hint="Select Room Type"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/spRoomType"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:hint="Adult"
+            android:textSize="20dp"
+            />
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:hint="Children"
+            android:textSize="20dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="No of Room"
+            android:textSize="20dp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/etAdult"
+            android:layout_height="wrap_content"
+            android:layout_width="120dp"
+            android:hint="0"
+            android:textSize="20dp"
+            android:layout_marginLeft="10dp"
+            android:textStyle="bold"
+            android:inputType="number"
+
+            />
+
+        <EditText
+            android:id="@+id/etChild"
+            android:layout_height="wrap_content"
+            android:layout_width="120dp"
+            android:hint="0"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:inputType="number"
+
+            />
+        <EditText
+            android:id="@+id/etRoomno"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:hint="0"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:inputType="number"
+            />
+
+    </LinearLayout>
+
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:hint="Calculate"
+        android:id="@+id/btnCalculate"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:layout_marginLeft="80dp"
+
+        />
+
+    <TextView
+        android:id="@+id/totalCost"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:textSize="20dp"
+        android:layout_margin="5dp"
+        android:textStyle="bold"
+        android:layout_marginLeft="140dp"
+        />
+
+    <TextView
+        android:id="@+id/tvVat"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:textSize="20dp"
+        android:layout_margin="5dp"
+        android:textStyle="bold"
+        android:layout_marginLeft="140dp"
+        />
+
+
+    <TextView
+        android:id="@+id/tvGrandTotal"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:textSize="20dp"
+        android:layout_margin="5dp"
+        android:textStyle="bold"
+        android:layout_marginLeft="140dp"
+        />
+
+    <TextView
+        android:id="@+id/roomCost"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:textSize="20dp"
+        android:layout_margin="5dp"
+        android:textStyle="bold"
+        android:inputType="number"
+        android:layout_marginLeft="140dp"
+
+        />
+
+    <TextView
+        android:id="@+id/roomNo"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:textSize="20dp"
+        android:layout_margin="5dp"
+        android:textStyle="bold"
+        android:inputType="number"
+        android:layout_marginLeft="140dp"
+        />
+
+    <TextView
+        android:id="@+id/totalDays"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:textSize="20dp"
+        android:layout_margin="5dp"
+        android:textStyle="bold"
+        android:layout_marginLeft="140dp"
+        />
+
+
+</LinearLayout>
